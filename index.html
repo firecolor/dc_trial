@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ブログ名</title>
+	<meta name="description" content="デザキャン体験会用のHTMLです">
+	<meta name="keywords" content="デザキャン,体験会">
+
+	<meta name="robots" content="INDEX,FOLLOW">
+	<link rel="canonical" href="このページの正しいURL">
+
+	<!-- CSSのリセットは A modern CSS reset を使用-->
+	<link rel="stylesheet" href="assets/css/reset.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- <link rel="stylesheet" href="assets/css/menu.css"> -->
+	<!-- <link rel="stylesheet" href="assets/css/page-xxx.css"> -->
+</head>
+
+<body>
+	<header class="mainHeader">
+		<p class="mainHeader_title">ブログ名</p>
+
+		<nav id="js-globalNavi" class="gnavi" aria-hidden="true">
+			<!-- <button aria-expanded="false" aria-controls="globalNavi" aria-label="メニューを閉じる" class="naviButton navi_close">
+				<span class="line" aria-hidden="true">
+				</span>
+			</button> -->
+			<span class="gnavi_label">MENU</span>
+			<ul>
+				<li><a href="/">TOP</a></li>
+				<li><a href="/">ブログ一覧</a></li>
+				<li><a href="/">お問い合わせ</a></li>
+				<li><a href="/">筆者プロフィール</a></li>
+			</ul>
+		</nav>
+
+		<button aria-expanded="false" aria-controls="js-globalNavi" aria-label="メニュー" class="naviButton">
+			<span class="line" aria-hidden="true">
+			</span>
+		</button>
+	</header>
+	<!-- <script src="test.js"></script> -->
+
+	<div class="hero">
+		<figure class="hero_writer">
+			<picture class="writer_img">
+				<source type="image/webp" srcset="assets/images/hero_author.webp">
+				<img src="assets/images/hero_author.jpg" alt="">
+			</picture>
+			<figcaption class="writer_name">筆者</figcaption>
+		</figure>
+	</div>
+
+	<main>
+		<section>
+			<h2 class="section_heading">最新の投稿</h2>
+			<div class="post">
+				<div class="post_item">
+					<a href="/">
+						<picture class="item_img">
+							<source type="image/webp" srcset="assets/images/dummy.webp">
+							<img src="assets/images/dummy.jpg" alt="">
+						</picture>
+					</a>
+					<div class="item_body">
+						<h3><a href="/">タイトルタイトル</a></h3>
+						<p>詳細の文章がここに入ります詳細の文章がここに入ります</p>
+						<time datetime="2021-01-01">21/01/01</time>
+					</div>
+				</div>
+				<div class="post_item">
+					<a href="/">
+						<picture class="item_img">
+							<source type="image/webp" srcset="assets/images/dummy.webp">
+							<img src="assets/images/dummy.jpg" alt="">
+						</picture>
+					</a>
+					<div class="item_body">
+						<h3><a href="/">タイトルタイトル</a></h3>
+						<p>詳細の文章がここに入ります詳細の文章がここに入ります</p>
+						<time datetime="2021-01-01">21/01/01</time>
+					</div>
+				</div>
+				<div class="post_item">
+					<a href="/">
+						<picture class="item_img">
+							<source type="image/webp" srcset="assets/images/dummy.webp">
+							<img src="assets/images/dummy.jpg" alt="">
+						</picture>
+					</a>
+					<div class="item_body">
+						<h3><a href="/">タイトルタイトル</a></h3>
+						<p>詳細の文章がここに入ります詳細の文章がここに入ります</p>
+						<time datetime="2021-01-01">21/01/01</time>
+					</div>
+				</div>
+				<div class="post_item">
+					<a href="/">
+						<picture class="item_img">
+							<source type="image/webp" srcset="assets/images/dummy.webp">
+							<img src="assets/images/dummy.jpg" alt="">
+						</picture>
+					</a>
+					<div class="item_body">
+						<h3><a href="/">タイトルタイトル</a></h3>
+						<p>詳細の文章がここに入ります詳細の文章がここに入ります</p>
+						<time datetime="2021-01-01">21/01/01</time>
+					</div>
+				</div>
+				<div class="post_item">
+					<a href="/">
+						<picture class="item_img">
+							<source type="image/webp" srcset="assets/images/dummy.webp">
+							<img src="assets/images/dummy.jpg" alt="">
+						</picture>
+					</a>
+					<div class="item_body">
+						<h3><a href="/">タイトルタイトル</a></h3>
+						<p>詳細の文章がここに入ります詳細の文章がここに入ります</p>
+						<time datetime="2021-01-01">21/01/01</time>
+					</div>
+				</div>
+			</div>
+			<div class="buttonWrapper">
+				<a href="/" class="btn btn-more">もっと見る</a>
+			</div>
+
+		</section>
+
+	</main>
+
+	<footer>
+		<p>copyright</p>
+	</footer>
+
+<script src="assets/js/main.js" r></script>
+</body>
+</html>
