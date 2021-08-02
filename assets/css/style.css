@@ -158,11 +158,14 @@ main {
 
 
 .post_item img {
+	width: 100%;
+	height: auto;
 	aspect-ratio: 170 / 100;
 	object-fit  : cover;
 }
 .post_item:first-child img {
 	aspect-ratio: 1 / 0.282;
+	object-position: bottom;
 }
 
 .item_body {
