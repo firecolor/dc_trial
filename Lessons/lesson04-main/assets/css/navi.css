@@ -1,0 +1,136 @@
+@charset "utf-8";
+/*!
+ * File Info: ナビ用 - HTMLとCSSの講座
+*/
+
+/** ========================================
+ * @NAVI TOGGLE
+ * ナビのトグルボタン
+ * ====================================== */
+/** --------------------
+ * ボタンのラッパー
+ * ------------------ */
+.naviButton {
+	z-index: 2;
+	appearance: none;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	width: 35px;
+	height: 26px;
+	background: none;
+	border: none;
+}
+
+
+/** --------------------
+ * ハンバーガーのライン
+ * ------------------ */
+.naviButton .line {
+	position: absolute;
+	display: inline-block;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: var(--color-gray);
+	transform: translateY(-50%);
+}
+.naviButton::before,
+.naviButton::after {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	height: 2px;
+	background-color: var(--color-gray);
+	transition: all .2s;
+}
+.naviButton::before {
+	top: 0;
+	left: 0;
+	transform-origin: right top;
+}
+.naviButton::after {
+	bottom: 0;
+	left: 0;
+	transform-origin: right bottom;
+}
+
+
+.naviButton[aria-expanded=true] {
+	position: fixed;
+}
+.naviButton[aria-expanded=true] .line {
+	display: none;
+}
+.naviButton[aria-expanded=true]::before {
+	transform: rotate(-45deg);
+}
+.naviButton[aria-expanded=true]::after {
+	transform: rotate(45deg);
+}
+
+
+/** ========================================
+ * @GLOBAL NAVI
+ * グロナビ
+ * ====================================== */
+.gnavi {
+	z-index: 1;
+	position: fixed;
+	width: 64vw;
+	height: 100vh;
+	padding: 22px 32px;
+	background: var(--color-wht);
+	transition: all .2s ease-in;
+}
+
+.gnavi[aria-hidden=false] {
+	top: 0;
+	right: 0;
+	box-shadow: -2px 0 1px rgba(105,105,105, .2);
+}
+
+
+.gnavi[aria-hidden=true] {
+	top: 0;
+	right: -100%;
+}
+
+.gnavi_label {
+	font-size: var(--font-l);
+}
+
+.gnavi ul {
+	list-style: none;
+	margin: 63px 0 0;
+	padding: 0;
+	font-size: 1.125rem;
+}
+.gnavi li {
+	margin-top: 20px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid var(--color-gray);
+}
+
+.gnavi a {
+	position: relative;
+	display: block;
+	text-decoration: none;
+	color: var(--color-gray);
+}
+
+.gnavi a::after {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	top: 50%;
+	right: 1rem;
+	width: .75rem;
+	height: .75rem;
+	border-top: 2px solid var(--color-gray);
+	border-right: 2px solid var(--color-gray);
+	transform-origin: center;
+	transform: rotate(45deg) translateY(-50%);
+}

@@ -25,7 +25,27 @@ HTMLの土台を作る
 
 CSS
 
+```
+root
+├ assets
+│ ├ css
+│ │ ├ navi.css
+│ │ ├ reset.min.css
+│ │ └ style.css
+│ │
+│ ├ images
+│ │ ├・・・
+│ │ ├・・・
+│ │　
+│ └ js
+│   └ main.js
+│
+├ index.html
+├ 
+├
+├
 
+```
 
 
 ## レッスン

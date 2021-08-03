@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ブログ名</title>
+	<meta name="description" content="デザキャン体験会用のHTMLです">
+	<meta name="keywords" content="デザキャン,体験会">
+
+	<meta name="robots" content="INDEX,FOLLOW">
+	<link rel="canonical" href="このページの正しいURL">
+
+	<link rel="stylesheet" href="./assets/css/reset.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/navi.css">
+
+</head>
+
+<body>
+	<header class="mainHeader">
+		<p class="mainHeader_title">ブログ名</p>
+
+		<nav id="js-globalNavi" class="gnavi" aria-hidden="true">
+			<span class="gnavi_label">MENU</span>
+			<ul>
+				<li><a href="/">TOP</a></li>
+				<li><a href="/">ブログ一覧</a></li>
+				<li><a href="/">お問い合わせ</a></li>
+				<li><a href="/">筆者プロフィール</a></li>
+			</ul>
+		</nav>
+
+		<button aria-expanded="false" aria-controls="js-globalNavi" aria-label="メニュー" class="naviButton">
+			<span class="line" aria-hidden="true">
+			</span>
+		</button>
+	</header>
+
+	<div class="hero">
+		<figure class="hero_writer">
+			<picture class="writer_img">
+				<source type="image/webp" srcset="./assets/images/hero_author.webp">
+				<img src="./assets/images/hero_author.jpg" alt="" loading="lazy" width="401" height="267">
+			</picture>
+			<figcaption class="writer_name">筆者</figcaption>
+		</figure>
+	</div>
+
+
+<script src="./assets/js/main.js"></script>
+</body>
+</html>

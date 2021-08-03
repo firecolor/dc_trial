@@ -1,0 +1,249 @@
+@charset "utf-8";
+/*!
+ * File Info: HTMLとCSSの講座
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Noto Serif JP', serif;
+	font-display: swap;
+}
+
+
+
+/** ========================================
+ * @GENERAL
+ * 全般
+ * ====================================== */
+/** --------------------
+ * カスタムプロパティ
+ * ------------------ */
+:root {
+	--color-primaly: #03658C;
+	--color-secondly: #03738C;
+	--color-accent: #F29F05;
+
+	--color-wht: #fff;
+	--color-blk: #011c27;
+	--color-gray: #707070;
+
+	--font-l: 1.25rem; /*basesie 16 20px*/
+	--font-m: 1rem; /*16px*/
+	--font-n: .875rem; /*14px*/
+	--font-s: .75rem; /*12px*/
+}
+
+
+/** --------------------
+ * 全体
+ * ------------------ */
+* {
+	outline: none;
+}
+body {
+	color: var(--color-gray);
+	font-size: 16px;
+	line-height: 1;
+}
+
+
+/** ========================================
+ * @HEADER
+ * ヘッダー
+ * ====================================== */
+.mainHeader {
+	position: relative;
+	height: 53px;
+	display: flex;
+	align-items: center;
+}
+.mainHeader_title {
+	margin-left: 20px;
+	color: var(--color-primaly);
+	font-size: var(--font-l);
+}
+
+
+
+/** ========================================
+ * @HERO
+ * ヒーローヘッダー（メインビジュアル）
+ * ====================================== */
+.hero {
+	position: relative;
+	aspect-ratio: 1 / 0.374;
+	background: url(../images/hero_bg-top.webp) center -15vw no-repeat;
+	background-size: cover;
+}
+
+
+/** --------------------
+ * 筆者
+ * ------------------ */
+.hero_writer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	transform: translateY(calc(50% + 1rem));
+}
+
+.writer_img {
+	overflow: hidden;
+	inset: auto 0 0;
+	margin: auto;
+	width: 33vw;
+	height: 33vw;
+	border: solid 4px var(--color-wht);
+	border-radius: 50%;
+}
+.writer_img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+.writer_name {
+	margin-top: 1rem;
+}
+
+
+
+/** ========================================
+ * @MAIN
+ * メイン要素
+ * ====================================== */
+main {
+	width: 100%;
+	margin-top: 37.4vw;
+	padding: 0 10px;
+}
+
+
+/** --------------------
+ * セクションの見出し
+ * ------------------ */
+.section_heading {
+	padding-bottom: 7px;
+	border-bottom: 2px solid var(--color-secondly);
+	color: var(--color-primaly);
+	font-size: var(--font-l);
+}
+
+
+/** --------------------
+ * 記事
+ * ------------------ */
+.post {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px 10px;
+	margin-top: 20px;
+}
+.post_item {
+	flex: 1 1 calc((100% - 10px) / 2);
+}
+
+.post_item:first-child {
+	width: 100%;
+	flex: 0 1 100%;
+	margin-left: 0;
+}
+
+
+.post_item img {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 170 / 100;
+	object-fit  : cover;
+}
+.post_item:first-child img {
+	aspect-ratio: 1 / 0.282;
+	object-position: bottom;
+}
+
+.item_body {
+	margin-top: 20px;
+}
+
+.item_body h3 {
+	font-size: var(--font-m);
+}
+.item_body h3 a {
+	color: var(--color-gray);
+}
+
+.item_body p {
+	margin-top: 5px;
+	font-size: var(--font-n);
+}
+.item_body time {
+	display: block;
+	margin-top: 20px;
+	text-align: right;
+	font-size: var(--font-s);
+}
+
+
+/** --------------------
+ * ボタンのラッパー
+ * ------------------ */
+.buttonWrapper {
+	display: flex;
+	margin-top: 46px;
+	justify-content: center;
+}
+
+
+
+/** ========================================
+ * @BUTTON
+ * ボタン
+ * ====================================== */
+/**/
+.btn {
+	display: inline-block;
+	padding: 1rem;
+	border-radius: 2rem;
+	color: var(--color-gray);
+	font-size: var(--font-l);
+	text-align: center;
+	text-decoration: none;
+}
+
+.btn-more {
+	width: 50vw;
+	margin: auto;
+	background-color: var(--color-secondly);
+	color: var(--color-wht);
+}
+
+
+
+/** ========================================
+ * @FOOTER
+ * フッター
+ * ====================================== */
+footer {
+	margin-top: 34px;
+	padding: 10px;
+	background: var(--color-accent);
+	color: var(--color-wht);
+	font-size: var(--font-s);
+	text-align: center;
+}
+
+
+
+/** ========================================
+ * メディアクエリ参考
+ * ====================================== */
+@media screen and (max-width: 640px) {
+}

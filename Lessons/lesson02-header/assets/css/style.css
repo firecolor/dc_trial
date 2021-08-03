@@ -1,0 +1,70 @@
+@charset "utf-8";
+/*!
+ * File Info: HTMLとCSSの講座
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Noto Serif JP', serif;
+	font-display: swap;
+}
+
+
+
+/** ========================================
+ * @GENERAL
+ * 全般
+ * ====================================== */
+/** --------------------
+ * カスタムプロパティ
+ * ------------------ */
+:root {
+	--color-primaly: #03658C;
+	--color-secondly: #03738C;
+	--color-accent: #F29F05;
+
+	--color-wht: #fff;
+	--color-blk: #011c27;
+	--color-gray: #707070;
+
+	--font-l: 1.25rem; /*basesie 16 20px*/
+	--font-m: 1rem; /*16px*/
+	--font-n: .875rem; /*14px*/
+	--font-s: .75rem; /*12px*/
+}
+
+
+/** --------------------
+ * 全体
+ * ------------------ */
+* {
+	outline: none;
+}
+body {
+	color: var(--color-gray);
+	font-size: 16px;
+	line-height: 1;
+}
+
+
+/** ========================================
+ * @HEADER
+ * ヘッダー
+ * ====================================== */
+.mainHeader {
+	position: relative;
+	height: 53px;
+	display: flex;
+	align-items: center;
+}
+.mainHeader_title {
+	margin-left: 20px;
+	color: var(--color-primaly);
+	font-size: var(--font-l);
+}
