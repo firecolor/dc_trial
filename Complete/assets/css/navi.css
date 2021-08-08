@@ -132,5 +132,60 @@
 	border-top: 2px solid var(--color-gray);
 	border-right: 2px solid var(--color-gray);
 	transform-origin: center;
-	transform: rotate(45deg) translateY(-50%);
+	transform: translateY(-50%) rotate(45deg);
+}
+
+
+
+/** ========================================
+ * メディアクエリ参考
+ * ====================================== */
+@media screen and (min-width: 1200px) {
+
+.naviButton {
+	display: none;
+}
+
+.gnavi {
+	position: static;
+	flex: 1 1 auto;
+	width: auto;
+	height: auto;
+	padding: 0;
+	background: var(--color-wht);
+	transition: none;
+}
+
+.gnavi[aria-hidden=false] {
+	top: auto;
+	right: auto;
+	box-shadow: none;
+}
+
+.gnavi[aria-hidden=true] {
+	top: auto;
+	right: auto;
+}
+
+.gnavi_label {
+	display: none;
+}
+
+.gnavi ul {
+	display: flex;
+	justify-content: flex-end;
+	gap: 1.6rem;
+	margin: 0 1rem 0 0;
+}
+.gnavi li {
+	margin-top: 0;
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+.gnavi a::after {
+	display: none;
+}
+
+
 }
