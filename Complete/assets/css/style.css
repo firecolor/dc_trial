@@ -3,6 +3,7 @@
  * File Info: HTMLとCSSの講座
 */
 
+/* ▼▼▼▼▼ lesson02 ▼▼▼▼▼ */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
 
 h1,
@@ -69,7 +70,9 @@ body {
 	font-size: var(--font-l);
 }
 
+/* ▲▲▲▲▲ end lesson02 ▲▲▲▲▲ */
 
+/* ▼▼▼▼▼ lesson03 ▼▼▼▼▼ */
 
 /** ========================================
  * @HERO
@@ -114,7 +117,9 @@ body {
 	margin-top: 1rem;
 }
 
+/* ▲▲▲▲▲ end lesson03 ▲▲▲▲▲ */
 
+/* ▼▼▼▼▼ lesson04 ▼▼▼▼▼ */
 
 /** ========================================
  * @MAIN
@@ -225,7 +230,9 @@ main {
 	color: var(--color-wht);
 }
 
+/* ▲▲▲▲▲ end lesson04 ▲▲▲▲▲ */
 
+/* ▼▼▼▼▼ lesson05 ▼▼▼▼▼ */
 
 /** ========================================
  * @FOOTER
@@ -239,3 +246,5 @@ footer {
 	font-size: var(--font-s);
 	text-align: center;
 }
+
+/* ▲▲▲▲▲ end lesson05 ▲▲▲▲▲ */
